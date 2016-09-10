@@ -1,0 +1,5 @@
+require('./modules/ps3timer')
+require('./modules/wiiutimer')
+require('./modules/xboxonetimer')
+require('./modules/xbox360timer-1')
+require('./modules/xbox360timer-2')

@@ -1,0 +1,30 @@
+#ps3logo, #xboxOneLogo, #wiiulogo{
+  width: 100%;
+}
+
+.logoX360{
+  width: 80%;
+  position: relative;
+  left: 3em;
+}
+input[type=number]{
+  text-align: center;
+  width: 4em;
+}
+
+.big-text{
+  font-size: 4em;
+  font-weight: bolder;
+}
+@media screen and (min-width:1200px){
+  #kindos-logo{
+    position: absolute;
+    left: 2em;
+  }
+}
+
+.button-red{background:#c62828; color:white;}
+
+.row{
+  align-items: center;
+}

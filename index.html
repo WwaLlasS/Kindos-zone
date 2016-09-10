@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Kindo's timer</title>
+  <link rel="stylesheet" href="resources/css/normalize.css">
+  <link rel="stylesheet" href="resources/css/framework.css">
+  <link rel="stylesheet" href="resources/css/styles.css">
+</head>
+<body>
+  <img id="kindos-logo" src="resources/image/kindos-logo.png" alt="Kindos logo" />
+  <main class="container">
+    <!-- <h1 class="text-center">Kindo's Zone timer indicator</h1> -->
+    <div class="row">
+      <div class="col lg-4">
+        <img id="ps3logo" src="resources/image/PS3_Logo.png" alt="Playstation 3" />
+        <div class="text-center big-text">
+          <span>00</span>:<span>00</span>
+        </div>
+        <div class="text-center">
+          <label for="">Minutos:</label>
+          <input type="number" value="30" min="0">
+        </div>
+        <div class="row">
+          <button class="button-green">Iniciar</button>
+          <button class="button-red">Detener</button>
+        </div>
+      </div>
+      <div class="col lg-4">
+        <img id="wiiulogo" src="resources/image/wiiu.png" alt="Nintendo Wii U" />
+        <div class="text-center big-text">
+          <span>00</span>:<span>00</span>
+        </div>
+        <div class="text-center">
+          <label for="">Minutos:</label>
+          <input type="number" value="30" min="0">
+        </div>
+        <div class="row">
+          <button class="button-green">Iniciar</button>
+          <button class="button-red">Detener</button>
+        </div>
+      </div>
+      <div class="col lg-4">
+        <img id="xboxOneLogo" src="resources/image/Xbox_One_logo.png" alt="Xbox ONE" />
+        <div class="text-center big-text">
+          <span>00</span>:<span>00</span>
+        </div>
+        <div class="text-center">
+          <label for="">Minutos:</label>
+          <input type="number" value="30" min="0">
+        </div>
+        <div class="row">
+          <button class="button-green">Iniciar</button>
+          <button class="button-red">Detener</button>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col lg-6">
+        <img class="logoX360" src="resources/image/xbox-360-logo.png" alt="Xbox 360" />
+        <div class="text-center big-text">
+          1-&nbsp;<span>00</span>:<span>00</span>
+        </div>
+        <div class="text-center">
+          <label for="timeXbox360-1">Minutos:</label>
+          <input id='timeXbox360-1' type="number" value="30" min="0">
+        </div>
+        <div class="row">
+          <button class="button-green">Iniciar</button>
+          <button class="button-red">Detener</button>
+        </div>
+      </div>
+      <div class="col lg-6">
+        <img class="logoX360" src="resources/image/xbox-360-logo.png" alt="Xbox 360" />
+        <div class="text-center big-text">
+          2-&nbsp;<span>00</span>:<span>00</span>
+        </div>
+        <div class="text-center">
+          <label for="timeXbox360-2">Minutos:</label>
+          <input id='timeXbox360-2' type="number" value="30" min="0">
+        </div>
+        <div class="row">
+          <button class="button-green">Iniciar</button>
+          <button class="button-red">Detener</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <audio src="resources/alert-sound.mp3" id="sound"></audio>
+</body>
+<script type="text/javascript">
+  require('./renderer.js')
+</script>
+</html>
